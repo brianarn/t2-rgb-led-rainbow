@@ -1,0 +1,22 @@
+{
+  "name": "t2-rgb-led",
+  "version": "0.1.0",
+  "description": "Simple RGB color cycling with a Tessel 2 and Johnny-Five",
+  "main": "index.js",
+  "scripts": {
+    "start": "t2 run index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/brianarn/t2-rgb-led-rainbow",
+  "keywords": [
+    "Tessel",
+    "Johnny-Five"
+  ],
+  "license": "MIT",
+  "readme": "Simple RGB LED play with a Tessel 2 and Johnny-Five",
+  "dependencies": {
+    "johnny-five": "0.9.39",
+    "t2-cli": "0.0.18",
+    "tessel-io": "0.4.0"
+  }
+}
