@@ -39,6 +39,16 @@ Once you have things wired up, it's pretty straight forward!
 2. `npm start`
 3. Enjoy the rainbow!
 
+## Known Problems
+
+While I can `t2 run index.js` just fine, I can't seem to `t2 push index.js`. It
+builds, it issues an error and tells me to open an issue (which I may, want to
+investigate a bit first), it lights up red briefly, and the whole thing shuts
+down.
+
+So, for now, it's fun to run, but you'll need to push off of a full deploy just
+yet. :rimshot:
+
 ## Demo video
 
 Here's a [terrible Vine video](https://vine.co/v/itXv2EzX1aM) which doesn't do
