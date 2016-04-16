@@ -16,7 +16,6 @@
   "readme": "Simple RGB LED play with a Tessel 2 and Johnny-Five",
   "dependencies": {
     "johnny-five": "0.9.39",
-    "t2-cli": "0.0.18",
     "tessel-io": "0.4.0"
   }
 }

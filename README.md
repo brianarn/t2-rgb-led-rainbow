@@ -14,9 +14,6 @@ A relatively recent version of Node (anything 4.x+ is likely fine, I was using
 
 ## Dependencies
 
-- [t2-cli](https://github.com/tessel/t2-cli): Probably not necessary, as you
-  may already have it installed globally, but it felt like a reasonable thing to
-  have on hand.
 - [Johnny-Five](http://johnny-five.io/): Could I have done this without J5?
   Probably. Still makes life easier, makes the code more readable, and it's fun.
 - [tessel-io](https://github.com/rwaldron/tessel-io): The IO board driver so
