@@ -21,7 +21,6 @@ board.on('ready', function () {
   // as indexes into the colors array. We'll start with red/green.
   var decColor = 0;
   var incColor = 1;
-  console.log('Now decrementing %s, incrementing %s', colorNames[decColor], colorNames[incColor]);
 
   // Set up our next determination.
   function nextColor() {
@@ -30,7 +29,6 @@ board.on('ready', function () {
     if (colors[incColor] >= 255) {
       decColor = incColor;
       incColor = (incColor + 1) % 3;
-      console.log('Now decrementing %s, incrementing %s', colorNames[decColor], colorNames[incColor]);
     }
 
     // Do our decrement/increment and display it.
@@ -40,5 +38,5 @@ board.on('ready', function () {
   }
 
   // Start it up
-  setInterval(nextColor, 10);
+  this.loop(10, nextColor);
 });

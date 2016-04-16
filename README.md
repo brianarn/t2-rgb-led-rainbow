@@ -57,19 +57,6 @@ it justice, since, well, the LED doesn't capture nicely on camera.
 Maybe if I was using something that wasn't just my phone, and I could control
 exposure, but still. You get the idea.
 
-## `setInterval` usage
-
-Originally, I wanted this to cycle as fast as possible. I could have used
-something like `process.nextTick` or `setImmediate` or maybe even
-[temporal](https://github.com/rwaldron/temporal), but in initial experiments,
-that went **really really poorly**. In particular, `setImmediate` worked nicely
-for about 30 seconds and then everything went dark, and I had to reboot the
-Tessel.
-
-So, I'm using `setInterval` with an interval of 10. Seems to be fine. Gotta give
-the hardware a little room to breathe I suppose, it's not exactly a
-supercomputer. Still pretty amazing though.
-
 ## Common Cathode LEDs
 
 As my RGB LED is a common anode LED, I've wired the anode (the long pin) to the
