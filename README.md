@@ -36,23 +36,14 @@ Once you have things wired up, it's pretty straight forward!
 2. `npm start`
 3. Enjoy the rainbow!
 
-## Known Problems
-
-While I can `t2 run index.js` just fine, I can't seem to `t2 push index.js`. It
-builds, it issues an error and tells me to open an issue (which I may, want to
-investigate a bit first), it lights up red briefly, and the whole thing shuts
-down.
-
-So, for now, it's fun to run, but you'll need to push off of a full deploy just
-yet. :rimshot:
-
 ## Demo video
 
-Here's a [terrible Vine video](https://vine.co/v/itXv2EzX1aM) which doesn't do
-it justice, since, well, the LED doesn't capture nicely on camera.
+Here's a couple of videos of varying quality:
 
-Maybe if I was using something that wasn't just my phone, and I could control
-exposure, but still. You get the idea.
+- [Better Instagram video](https://www.instagram.com/p/BEge_cDiKpbR9U6-aPQMRkhkAoW9aTB4IJeElc0/)
+- [Worse, but first: Vine video](https://vine.co/v/itXv2EzX1aM)
+
+Napkin as diffuser is pretty effective for video capture of LED color changes!
 
 ## Common Cathode LEDs
 
@@ -61,7 +52,11 @@ As my RGB LED is a common anode LED, I've wired the anode (the long pin) to the
 to the `GND` pin. I'd also remove the `isAnode: true` from the setup of the LED
 in `index.js`, as you'll get odd colorings otherwise.
 
+
 ## Credits
 
 Fritzing sketch of the Tessel 2 from the
 [tessel-io](https://github.com/rwaldron/tessel-io) repository.
+
+Also, much love and thanks to @rwaldron for his help resolving a problem with
+being able to `t2 push index.js` (the REPL was causing errors).
